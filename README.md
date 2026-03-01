@@ -6,7 +6,7 @@
 
 ## 🧑‍💻 Who Am I?
 
-I’m a developer who loves in the terminal.
+I’m a developer who lives in the terminal.
 
 I build:
 
@@ -40,15 +40,23 @@ If it runs in the Terminal, I’m interested.
 
 ### 🧩 [lean](https://github.com/dominionthedev/lean)
 A smart tool for managing env files
-Built in Go
+Built in Go, uses Charm [lipgloss](https://github.com/charmbracelet/lipgloss), [fang](https://github.com/charmbracelet/fang), [huh](https://github.com/charmbracelet/huh), and [Cobra](https://github.com/spf13/cobra)
 
-### 🧠 [logically](https://github.com/leraniode/x-py)
+### 🤔 [logically](https://github.com/leraniode/x-py)
 A logic-construction toolkit for building logic, logically 🤔.
-Built in Python
+Built in Python, uses no deps(Yes, no dependencies))
 
 ### 🍫 [choco](https://github.com/leraniode/x-py)
 A little flavoured events and action module 🍫
-Built in Python
+Built in Python, uses no deps
+
+### 🧠 [illygen](https://github.com/leraniode/illygen)
+A Library and Runtime for building an Intelligence System
+Built in Go, no deps
+
+### 🪵 [logfmt](https://github.com/dominionthedev/logfmt)
+A simple, little CLI tool for formatting, colourizing, and displaying Logs
+Built in Go, uses Charm [log](https://github.com/charmbracelet/log), [fang](https://github.com/charmbracelet/fang) and [Cobra](https://github.com/spfi3/cobra)
 
 
 ---
@@ -60,7 +68,7 @@ Built in Python
 - Simplicity and Modularity scales.
 - Open source matters.
 
-I build tools I can be able to use.
+I build tools I can use.
 
 ---
 
@@ -77,5 +85,5 @@ I build tools I can be able to use.
 ## 🌱 Open Source
 
 I love learning and building in the open.
-I believe Open Source is the future and Power of Development
+I believe Open Source is the future and the power of Development
 
