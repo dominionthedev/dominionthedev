@@ -8,7 +8,7 @@
 
 ## 🧑‍💻 Who Am I?
 
-> I'm DominionDev, a solo developer, student, geek and FOSS lover with a strong focus on building clean, structured, and reusable software. I approach development as more than just writing code — I think in terms of architecture, system boundaries, logic, and long-term evolution.
+> I'm DominionDev, a 14-year-old solo developer, student, geek and FOSS lover with a strong focus on building clean, structured, and reusable software. I approach development as more than just writing code — I think in terms of architecture, system boundaries, logic, and long-term evolution.
 
 My primary languages are **Go** and **Python** — with **Rust** in the mix — each used deliberately depending on the job.
 
@@ -38,42 +38,47 @@ A defining part of my work is a **theory-driven approach** to software design �
   - [Fang](https://github.com/charmbracelet/fang)
   - [Huh](https://github.com/charmbracelet/huh)
   - and [more](https://github.com/charmbracelet)
-- [Theories](https://github.com/dominionthedev/notes) i invent
-- SVG for designing and branding
-- Typescript for UI
-- Lua for configuration
+- 
 
 ---
 
 ## 🚀 Projects
 
-### 🧩 [lean](https://github.com/dominionthedev/lean)
-A smart tool for managing env files
-Built in Go
+### Leraniode/ — My Organisation
 
-### 🤔 [logically](https://github.com/leraniode/x-py)
-A logic-construction toolkit for building logic, logically 🤔.
-Built in Python
+> Building tools that feel alive.
 
-### 🍫 [choco](https://github.com/leraniode/x-py)
-A little flavoured events and action module 🍫
-Built in Python
+{{range recentRepos 6 "leraniode"}}
+- **[{{.Name}}]({{.URL}})** — {{.Description}}
+{{- end}}
 
-### 🧠 [illygen](https://github.com/leraniode/illygen)
-A Library and Runtime for building an Intelligence System
-Built in Go, no deps
+→ [github.com/leraniode](https://github.com/leraniode)
 
-### 🪵 [logfmt](https://github.com/dominionthedev/logfmt)
-A simple, little CLI tool for formatting, colourizing, and displaying Logs
-Built in Go, uses Charm [log](https://github.com/charmbracelet/log), [fang](https://github.com/charmbracelet/fang) and [Cobra](https://github.com/spfi3/cobra)
+---
 
-### ☁️ [ollacloud](https://github.com/dominionthedev/ollacloud)
-Use ollama in the cloud without needing ollama
-Built with Go, Bubbletea, and more
+### Personal Projects
 
-### 🌈 [wondertone](https://github.com/leraniode/wondertone)
-A perpectual color intelligence library in go
-Built in go, supports lipgloss and go-colorful
+{{range recentRepos 4 "dominionthedev"}}
+- **[{{.Name}}]({{.URL}})** — {{.Description}}
+{{- end}}
+
+---
+
+## 📓 Latest Notes
+
+{{range recentRepos 3 "dominionthedev" "notes"}}
+{{- end}}
+<!-- NOTES:START -->
+<!-- NOTES:END -->
+
+---
+
+## 💡 Recent Gists
+
+{{range recentGists 3}}
+- [{{.Description}}]({{.URL}}) — `{{.CreatedAt | date "Jan 2006"}}`
+{{- end}}
+
 
 ---
 
@@ -102,5 +107,4 @@ I build tools I can be able to use.
 ## 🌱 Open Source
 
 I love learning and building in the open.
-I believe Open Source is the future and the power of Development
-
+I believe Open Source is the future and Power of Development

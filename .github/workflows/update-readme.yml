@@ -1,0 +1,57 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "0 0 * * *"           # daily at midnight UTC
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md.tpl"
+      - "scripts/inject_notes.py"  # re-run if the script changes too
+  repository_dispatch:
+    types:
+      - notes-updated              # fired by your notes repo on push
+      - gist-created               # reserved for future gist webhook
+  workflow_dispatch:               # manual trigger from GitHub UI
+
+jobs:
+  update-readme:
+    name: Update README.md
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+
+      # ── Step 1: inject latest notes ──────────────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Inject notes into README
+        env:
+          GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
+          NOTES_REPO:   dominionthedev/notes   # ← change if repo name differs
+          README_PATH:  README.md
+          MAX_NOTES:    "5"
+          SKIP_FILES:   "README.md,about_me.md,projects.md,task.md"
+        run: python scripts/inject_notes.py
+
+      # ── Step 2: markscribe (repos, gists, etc.) ──────────────────────────
+      - name: Render README template with markscribe
+        uses: muesli/readme-scribe@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
+        with:
+          template: "README.md.tpl"
+          writeTo:  "README.md"
+
+      # ── Step 3: commit if anything changed ───────────────────────────────
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update README [automated]"
+          commit_author:  "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+          file_pattern:   README.md

@@ -1,0 +1,253 @@
+<svg width="480" height="110" viewBox="0 0 480 110" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    DominionDev — Handwritten Signature
+    Drawn as a single connected flowing SVG path.
+    Animation: stroke-dasharray draw-on, then a slow pulse glow loops.
+
+    The signature is a stylised cursive interpretation — not a perfect font,
+    but a real signature feel: slightly uneven baseline, compressed letterforms,
+    flowing connections, confident ending flourish.
+
+    Path designed for a baseline around y=72, flowing through y=48–82.
+    Signature underline/flourish ends with a long rightward stroke.
+
+    Colour: grey.pure (#8a8499) with violet.pure (#b87aff) glow on draw finish.
+  -->
+  <defs>
+    <filter id="sig-glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sig-glow-strong">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Gradient along signature — grey at start, violet accent toward end -->
+    <linearGradient id="sig-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8a8499"/>
+      <stop offset="60%"  stop-color="#9a90aa"/>
+      <stop offset="100%" stop-color="#b87aff"/>
+    </linearGradient>
+    <linearGradient id="sig-glow-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#8a8499" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#b87aff" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!--
+    === SIGNATURE PATH BREAKDOWN ===
+
+    The signature is one long connected path. Letter-by-letter intent:
+
+    D  — large loop opening left, curves down and right, stem returns up
+    o  — small tight oval loop, continues right
+    m  — two connected humps, flowing cursive
+    i  — short vertical, no lifted pen (dot added separately)
+    n  — one hump
+    i  — short vertical (dot added separately)
+    o  — small oval
+    n  — one hump, then rises into capital D
+    D  — large loop, drops, swings right into
+    e  — small loop
+    v  — sharp descend + ascend
+
+    Flourish: a long underline sweep from left to far right with a curl at end.
+
+    All approximate to make a believable cursive flow.
+    The 'i' dots are two separate small marks placed above baseline.
+  -->
+
+  <!-- Shadow/glow trace — drawn first, slightly blurred for depth -->
+  <path id="sig-shadow"
+    d="
+      M 28 52
+      C 22 44 18 50 20 60
+      C 22 70 30 76 38 72
+      C 42 70 42 65 40 58
+      C 38 50 34 48 36 52
+      C 38 56 44 58 50 56
+      C 56 54 58 58 58 62
+      C 58 66 56 70 54 72
+      C 58 70 64 58 68 54
+      C 72 50 74 52 74 56
+      C 74 62 72 68 70 72
+      C 73 72 78 70 80 66
+      C 82 62 82 68 82 72
+      C 84 66 86 60 88 56
+      C 90 52 92 52 92 56
+      C 92 62 90 68 90 72
+      C 92 70 96 66 98 62
+      C 100 58 100 62 100 66
+      C 100 70 99 72 98 72
+      C 102 72 108 68 110 64
+      C 112 60 110 66 110 72
+      C 112 68 116 60 120 56
+      C 124 52 126 54 126 58
+      C 126 64 124 70 122 72
+      C 126 70 132 64 134 60
+      C 136 56 138 58 138 62
+      C 138 66 136 70 134 72
+      C 138 72 146 70 150 62
+      C 154 54 150 58 150 66
+      C 150 72 152 74 156 72
+      C 162 68 166 60 168 56
+      C 170 52 172 54 172 60
+      C 172 68 168 74 170 72
+      C 174 66 180 56 184 54
+      C 186 53 186 56 186 62
+      C 186 70 184 74 184 72
+      C 186 68 192 60 194 57
+      C 196 54 198 56 198 62
+      C 198 68 196 72 196 72
+      C 200 72 206 68 210 62
+      C 212 58 212 62 212 66
+      C 212 70 211 72 210 72
+      C 215 68 222 62 226 58
+      C 232 52 238 50 244 54
+      C 252 60 254 72 252 78
+      C 250 84 244 86 240 84
+      C 236 82 234 76 236 70
+      C 238 64 244 62 250 64
+      C 256 66 260 70 262 74
+      C 264 72 266 66 268 62
+      C 270 58 272 60 272 64
+      C 272 70 270 74 268 76
+      C 272 74 276 66 278 62
+      C 280 58 282 60 282 64
+      C 282 70 280 76 280 78
+      C 282 74 286 66 292 60
+      C 296 56 300 56 302 60
+      C 305 65 302 72 300 74
+
+      M 22 84
+      C 80 90 160 92 240 90
+      C 310 88 370 84 420 80
+      C 440 78 458 76 468 75
+      C 474 74 476 74 476 76
+      C 476 78 470 80 462 80
+    "
+    fill="none"
+    stroke="url(#sig-glow-grad)"
+    stroke-width="5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#sig-glow-strong)"/>
+
+  <!-- Main signature path -->
+  <path id="sig-main"
+    d="
+      M 28 52
+      C 22 44 18 50 20 60
+      C 22 70 30 76 38 72
+      C 42 70 42 65 40 58
+      C 38 50 34 48 36 52
+      C 38 56 44 58 50 56
+      C 56 54 58 58 58 62
+      C 58 66 56 70 54 72
+      C 58 70 64 58 68 54
+      C 72 50 74 52 74 56
+      C 74 62 72 68 70 72
+      C 73 72 78 70 80 66
+      C 82 62 82 68 82 72
+      C 84 66 86 60 88 56
+      C 90 52 92 52 92 56
+      C 92 62 90 68 90 72
+      C 92 70 96 66 98 62
+      C 100 58 100 62 100 66
+      C 100 70 99 72 98 72
+      C 102 72 108 68 110 64
+      C 112 60 110 66 110 72
+      C 112 68 116 60 120 56
+      C 124 52 126 54 126 58
+      C 126 64 124 70 122 72
+      C 126 70 132 64 134 60
+      C 136 56 138 58 138 62
+      C 138 66 136 70 134 72
+      C 138 72 146 70 150 62
+      C 154 54 150 58 150 66
+      C 150 72 152 74 156 72
+      C 162 68 166 60 168 56
+      C 170 52 172 54 172 60
+      C 172 68 168 74 170 72
+      C 174 66 180 56 184 54
+      C 186 53 186 56 186 62
+      C 186 70 184 74 184 72
+      C 186 68 192 60 194 57
+      C 196 54 198 56 198 62
+      C 198 68 196 72 196 72
+      C 200 72 206 68 210 62
+      C 212 58 212 62 212 66
+      C 212 70 211 72 210 72
+      C 215 68 222 62 226 58
+      C 232 52 238 50 244 54
+      C 252 60 254 72 252 78
+      C 250 84 244 86 240 84
+      C 236 82 234 76 236 70
+      C 238 64 244 62 250 64
+      C 256 66 260 70 262 74
+      C 264 72 266 66 268 62
+      C 270 58 272 60 272 64
+      C 272 70 270 74 268 76
+      C 272 74 276 66 278 62
+      C 280 58 282 60 282 64
+      C 282 70 280 76 280 78
+      C 282 74 286 66 292 60
+      C 296 56 300 56 302 60
+      C 305 65 302 72 300 74
+    "
+    fill="none"
+    stroke="url(#sig-grad)"
+    stroke-width="2.2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="1400"
+    stroke-dashoffset="1400">
+    <animate attributeName="stroke-dashoffset"
+             from="1400" to="0"
+             dur="1.8s" begin="0.15s" fill="freeze"
+             calcMode="spline" keySplines="0.4 0 0.15 1" keyTimes="0;1"/>
+  </path>
+
+  <!-- i dots — two small marks, fade in after the stroke reaches them -->
+  <!-- First 'i' dot (Domin-i — around x=88, between m and n) -->
+  <circle cx="88" cy="48" r="2.2" fill="#9a90aa" opacity="0">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.2s" begin="0.85s" fill="freeze"/>
+  </circle>
+  <!-- Second 'i' dot (Domini-i — around x=134, between n and o) -->
+  <circle cx="134" cy="48" r="2.2" fill="#b87aff" opacity="0" filter="url(#sig-glow)">
+    <animate attributeName="opacity" from="0" to="0.9" dur="0.2s" begin="0.95s" fill="freeze"/>
+  </circle>
+
+  <!-- Flourish underline — draws in after main signature -->
+  <path id="sig-flourish"
+    d="
+      M 22 84
+      C 80 90 160 92 240 90
+      C 310 88 370 84 420 80
+      C 440 78 458 76 468 75
+      C 474 74 476 74 476 76
+      C 476 78 470 80 462 80
+    "
+    fill="none"
+    stroke="url(#sig-grad)"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-dasharray="520"
+    stroke-dashoffset="520">
+    <animate attributeName="stroke-dashoffset"
+             from="520" to="0"
+             dur="0.7s" begin="1.8s" fill="freeze"
+             calcMode="spline" keySplines="0.4 0 0.2 1" keyTimes="0;1"/>
+  </path>
+
+  <!-- Ongoing gentle violet pulse on the violet end of the path -->
+  <circle cx="300" cy="62" r="3" fill="#b87aff" opacity="0" filter="url(#sig-glow)">
+    <animate attributeName="opacity" from="0" to="0.5" dur="0.3s" begin="2.0s" fill="freeze"/>
+    <animate attributeName="opacity"
+             values="0.5;0.15;0.5" dur="3s" begin="2.3s" repeatCount="indefinite"/>
+    <animate attributeName="r"
+             values="3;4.5;3" dur="3s" begin="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+</svg>
