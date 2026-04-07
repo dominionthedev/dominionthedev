@@ -29,7 +29,7 @@ from datetime import datetime, timezone
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 NOTES_REPO   = os.environ.get("NOTES_REPO",   "dominionthedev/notes")
-README_PATH  = os.environ.get("README_PATH",  "README.md")
+README_PATH  = os.environ.get("README_PATH",  "README.md.tpl")
 MAX_NOTES    = int(os.environ.get("MAX_NOTES", "5"))
 
 _skip_raw    = os.environ.get("SKIP_FILES", "README.md,about_me.md,projects.md,task.md")
