@@ -8,7 +8,7 @@
 
 ## 🧑‍💻 Who Am I?
 
-> I'm DominionDev, a 14-year-old solo developer, student, geek and FOSS lover with a strong focus on building clean, structured, and reusable software. I approach development as more than just writing code — I think in terms of architecture, system boundaries, logic, and long-term evolution.
+> I'm DominionDev, a solo developer, student, geek and FOSS lover with a strong focus on building clean, structured, and reusable software. I approach development as more than just writing code — I think in terms of architecture, system boundaries, logic, and long-term evolution.
 
 My primary languages are **Go** and **Python** — with **Rust** in the mix — each used deliberately depending on the job.
 
@@ -75,10 +75,8 @@ A defining part of my work is a **theory-driven approach** to software design �
 
 ## 💡 Recent Gists
 
-{{range recentGists 3}}
-- [{{.Description}}]({{.URL}}) — `{{.CreatedAt | date "Jan 2006"}}`
-{{- end}}
-
+<!-- GISTS:START -->
+<!-- GISTS:END -->
 
 ---
 

@@ -2,18 +2,19 @@ name: Update README
 
 on:
   schedule:
-    - cron: "0 0 * * *"           # daily at midnight UTC
+    - cron: "0 0 * * *"
   push:
     branches:
       - main
     paths:
       - "README.md.tpl"
-      - "scripts/inject_notes.py"  # re-run if the script changes too
+      - "scripts/inject_notes.py"
+      - "scripts/inject_gist.py"
   repository_dispatch:
     types:
-      - notes-updated              # fired by your notes repo on push
-      - gist-created               # reserved for future gist webhook
-  workflow_dispatch:               # manual trigger from GitHub UI
+      - notes-updated
+      - gist-created
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -24,22 +25,32 @@ jobs:
       - name: Checkout profile repo
         uses: actions/checkout@v4
 
-      # ── Step 1: inject latest notes ──────────────────────────────────────
+      # ── Python setup ──────────────────────────────────────────────────────
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      # ── Step 1: Inject Notes ──────────────────────────────────────────────
       - name: Inject notes into README
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
-          NOTES_REPO:   dominionthedev/notes   # ← change if repo name differs
+          NOTES_REPO:   dominionthedev/notes
           README_PATH:  README.md.tpl
           MAX_NOTES:    "5"
           SKIP_FILES:   "README.md,about_me.md,projects.md,task.md"
         run: python scripts/inject_notes.py
 
-      # ── Step 2: markscribe (repos, gists, etc.) ──────────────────────────
+      # ── Step 1.5: Inject Gists ────────────────────────────────────────────
+      - name: Inject gists into README
+        env:
+          GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
+          USERNAME:     dominionthedev
+          README_PATH:  README.md.tpl
+          MAX_GISTS:    "3"
+        run: python scripts/inject_gist.py
+
+      # ── Step 2: Render Template ───────────────────────────────────────────
       - name: Render README template with markscribe
         uses: muesli/readme-scribe@master
         env:
