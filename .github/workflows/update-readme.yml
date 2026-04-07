@@ -8,8 +8,7 @@ on:
       - main
     paths:
       - "README.md.tpl"
-      - "scripts/inject_notes.py"
-      - "scripts/inject_gist.py"
+      - "scripts/*.py"
   repository_dispatch:
     types:
       - notes-updated
@@ -18,49 +17,57 @@ on:
 
 jobs:
   update-readme:
-    name: Update README.md
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout profile repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ── Python setup ──────────────────────────────────────────────────────
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # ── Step 1: Inject Notes ──────────────────────────────────────────────
-      - name: Inject notes into README
+      - name: copy README.md.tpl
+        run: cp README.md.tpl README.tmp
+
+      # ── Notes ─────────────────────────
+      - name: Inject notes
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
           NOTES_REPO:   dominionthedev/notes
-          README_PATH:  README.md.tpl
-          MAX_NOTES:    "5"
-          SKIP_FILES:   "README.md,about_me.md,projects.md,task.md"
+          README_PATH:  README.tmp
         run: python scripts/inject_notes.py
 
-      # ── Step 1.5: Inject Gists ────────────────────────────────────────────
-      - name: Inject gists into README
+      # ── Gists ─────────────────────────
+      - name: Inject gists
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
           USERNAME:     dominionthedev
-          README_PATH:  README.md.tpl
-          MAX_GISTS:    "3"
+          README_PATH:  README.tmp
         run: python scripts/inject_gist.py
 
-      # ── Step 2: Render Template ───────────────────────────────────────────
-      - name: Render README template with markscribe
-        uses: muesli/readme-scribe@master
+      # ── Repos ─────────────────────────
+      - name: Inject repos
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
-        with:
-          template: "README.md.tpl"
-          writeTo:  "README.md"
+          USERNAME:     dominionthedev
+          ORG_NAME:     leraniode
+          README_PATH:  README.tmp
+        run: python scripts/inject_repos.py
 
-      # ── Step 3: commit if anything changed ───────────────────────────────
-      - name: Commit and push changes
+      # ── Render ────────────────────────
+      - name: Render README
+        env:
+          TPL_PATH:    README.tmp
+          README_PATH: README.md
+        run: python scripts/render_readme.py
+
+      - name: Remove temporary file
+        run: rm README.tmp
+
+      # ── Commit ────────────────────────
+      - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update README [automated]"

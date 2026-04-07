@@ -48,9 +48,8 @@ A defining part of my work is a **theory-driven approach** to software design â€
 
 > Building tools that feel alive.
 
-{{range recentRepos 6 "leraniode"}}
-- **[{{.Name}}]({{.URL}})** â€” {{.Description}}
-{{- end}}
+<!-- ORG_REPOS:START -->
+<!-- ORG_REPOS:END -->
 
 â†’ [github.com/leraniode](https://github.com/leraniode)
 
@@ -58,9 +57,8 @@ A defining part of my work is a **theory-driven approach** to software design â€
 
 ### Personal Projects
 
-{{range recentRepos 4 "dominionthedev"}}
-- **[{{.Name}}]({{.URL}})** â€” {{.Description}}
-{{- end}}
+<!-- PERSONAL_REPOS:START -->
+<!-- PERSONAL_REPOS:END -->
 
 ---
 
