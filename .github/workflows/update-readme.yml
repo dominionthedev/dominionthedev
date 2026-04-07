@@ -34,7 +34,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
           NOTES_REPO:   dominionthedev/notes   # ← change if repo name differs
-          README_PATH:  README.md
+          README_PATH:  README.md.tpl
           MAX_NOTES:    "5"
           SKIP_FILES:   "README.md,about_me.md,projects.md,task.md"
         run: python scripts/inject_notes.py
