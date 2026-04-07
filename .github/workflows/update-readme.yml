@@ -67,11 +67,18 @@ jobs:
         run: rm README.tmp
 
       # ── Commit ────────────────────────
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update README [automated]"
-          commit_author:  "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-          file_pattern:   README.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
+      - name: Commit & push manually
+        run: |
+          git config user.name "Dominionthedeveloper"
+          git config user.email "Dominionthedeveloper@gmail.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "chore: update README [automated]"
+
+          git push https://x-access-token:${{ secrets.README_TOKEN }}@github.com/${{ github.repository }}
