@@ -64,8 +64,8 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[notes](https://github.com/dominionthedev/notes)** — No description
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[ministack](https://github.com/dominionthedev/ministack)** — No description
 - **[ai-engineering](https://github.com/dominionthedev/ai-engineering)** — Learn AI engineering from Scratch
 <!-- PERSONAL_REPOS:END -->
@@ -77,11 +77,11 @@ A defining part of my work is a **theory-driven approach** to software design �
 {{range recentRepos 3 "dominionthedev" "notes"}}
 {{- end}}
 <!-- NOTES:START -->
+- [`theories/main.md`](https://github.com/dominionthedev/notes/blob/main/theories/main.md) — Apr 08, 2026
 - [`iFast_chat.md`](https://github.com/dominionthedev/notes/blob/main/iFast_chat.md) — Apr 07, 2026
 - [`cone.md`](https://github.com/dominionthedev/notes/blob/main/cone.md) — Apr 06, 2026
 - [`lutip.md`](https://github.com/dominionthedev/notes/blob/main/lutip.md) — Apr 06, 2026
 - [`mushmellow.md`](https://github.com/dominionthedev/notes/blob/main/mushmellow.md) — Apr 06, 2026
-- [`relay.md`](https://github.com/dominionthedev/notes/blob/main/relay.md) — Apr 06, 2026
 
 → [Browse all notes](https://github.com/dominionthedev/notes)
 <!-- NOTES:END -->
