@@ -38,7 +38,10 @@ A defining part of my work is a **theory-driven approach** to software design â€
   - [Fang](https://github.com/charmbracelet/fang)
   - [Huh](https://github.com/charmbracelet/huh)
   - and [more](https://github.com/charmbracelet)
-- 
+- [Theories](https://github.com/dominionthedev/notes) i invent
+- SVG for designing and branding
+- Typescript for UI
+- Lua for configuration
 
 ---
 
