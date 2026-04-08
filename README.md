@@ -38,42 +38,61 @@ A defining part of my work is a **theory-driven approach** to software design �
   - [Fang](https://github.com/charmbracelet/fang)
   - [Huh](https://github.com/charmbracelet/huh)
   - and [more](https://github.com/charmbracelet)
-- [Theories](https://github.com/dominionthedev/notes) i invent
-- SVG for designing and branding
-- Typescript for UI
-- Lua for configuration
+- 
 
 ---
 
 ## 🚀 Projects
 
-### 🧩 [lean](https://github.com/dominionthedev/lean)
-A smart tool for managing env files
-Built in Go
+### Leraniode/ — My Organisation
 
-### 🤔 [logically](https://github.com/leraniode/x-py)
-A logic-construction toolkit for building logic, logically 🤔.
-Built in Python
+> Building tools that feel alive.
 
-### 🍫 [choco](https://github.com/leraniode/x-py)
-A little flavoured events and action module 🍫
-Built in Python
+<!-- ORG_REPOS:START -->
+- **[xgo](https://github.com/leraniode/xgo)** — Leraniode/'s Experimental go modules
+- **[.github](https://github.com/leraniode/.github)** — Leraniode/ github repo housing artifacts used across projects 🌱
+- **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨🌈
+- **[illygen](https://github.com/leraniode/illygen)** — a Go-based library and runtime for building intelligence systems 🧠
+- **[alolyte](https://github.com/leraniode/alolyte)** — Programmable SVG design library for Go 😎✨.
+- **[xpy](https://github.com/leraniode/xpy)** — Leraniode's Experimental python packages
+<!-- ORG_REPOS:END -->
 
-### 🧠 [illygen](https://github.com/leraniode/illygen)
-A Library and Runtime for building an Intelligence System
-Built in Go, no deps
+→ [github.com/leraniode](https://github.com/leraniode)
 
-### 🪵 [logfmt](https://github.com/dominionthedev/logfmt)
-A simple, little CLI tool for formatting, colourizing, and displaying Logs
-Built in Go, uses Charm [log](https://github.com/charmbracelet/log), [fang](https://github.com/charmbracelet/fang) and [Cobra](https://github.com/spfi3/cobra)
+---
 
-### ☁️ [ollacloud](https://github.com/dominionthedev/ollacloud)
-Use ollama in the cloud without needing ollama
-Built with Go, Bubbletea, and more
+### Personal Projects
 
-### 🌈 [wondertone](https://github.com/leraniode/wondertone)
-A perpectual color intelligence library in go
-Built in go, supports lipgloss and go-colorful
+<!-- PERSONAL_REPOS:START -->
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[notes](https://github.com/dominionthedev/notes)** — No description
+- **[ministack](https://github.com/dominionthedev/ministack)** — No description
+- **[ai-engineering](https://github.com/dominionthedev/ai-engineering)** — Learn AI engineering from Scratch
+<!-- PERSONAL_REPOS:END -->
+
+---
+
+## 📓 Latest Notes
+
+{{range recentRepos 3 "dominionthedev" "notes"}}
+{{- end}}
+<!-- NOTES:START -->
+- [`iFast_chat.md`](https://github.com/dominionthedev/notes/blob/main/iFast_chat.md) — Apr 07, 2026
+- [`cone.md`](https://github.com/dominionthedev/notes/blob/main/cone.md) — Apr 06, 2026
+- [`lutip.md`](https://github.com/dominionthedev/notes/blob/main/lutip.md) — Apr 06, 2026
+- [`mushmellow.md`](https://github.com/dominionthedev/notes/blob/main/mushmellow.md) — Apr 06, 2026
+- [`relay.md`](https://github.com/dominionthedev/notes/blob/main/relay.md) — Apr 06, 2026
+
+→ [Browse all notes](https://github.com/dominionthedev/notes)
+<!-- NOTES:END -->
+
+---
+
+## 💡 Recent Gists
+
+<!-- GISTS:START -->
+_No gists yet._
+<!-- GISTS:END -->
 
 ---
 
@@ -102,5 +121,4 @@ I build tools I can be able to use.
 ## 🌱 Open Source
 
 I love learning and building in the open.
-I believe Open Source is the future and the power of Development
-
+I believe Open Source is the future and Power of Development
