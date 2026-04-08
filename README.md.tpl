@@ -64,8 +64,6 @@ A defining part of my work is a **theory-driven approach** to software design â€
 
 ## ðŸ““ Latest Notes
 
-{{range recentRepos 3 "dominionthedev" "notes"}}
-{{- end}}
 <!-- NOTES:START -->
 <!-- NOTES:END -->
 

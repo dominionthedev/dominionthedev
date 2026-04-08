@@ -74,8 +74,6 @@ A defining part of my work is a **theory-driven approach** to software design �
 
 ## 📓 Latest Notes
 
-{{range recentRepos 3 "dominionthedev" "notes"}}
-{{- end}}
 <!-- NOTES:START -->
 - [`theories/main.md`](https://github.com/dominionthedev/notes/blob/main/theories/main.md) — Apr 08, 2026
 - [`iFast_chat.md`](https://github.com/dominionthedev/notes/blob/main/iFast_chat.md) — Apr 07, 2026
