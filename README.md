@@ -67,8 +67,8 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[ministack](https://github.com/dominionthedev/ministack)** — No description
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[ministack](https://github.com/dominionthedev/ministack)** — No description
 - **[notes](https://github.com/dominionthedev/notes)** — No description
 - **[ai-engineering](https://github.com/dominionthedev/ai-engineering)** — Learn AI engineering from Scratch
 <!-- PERSONAL_REPOS:END -->
