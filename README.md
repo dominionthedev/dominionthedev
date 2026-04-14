@@ -67,10 +67,10 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[Recordly](https://github.com/dominionthedev/Recordly)** — The open-source screen recorder and editor for professional product videos, demos, and tutorials.
+- **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[Recordly](https://github.com/dominionthedev/Recordly)** — The open-source screen recorder and editor for professional product videos, demos, and tutorials.
 - **[ministack](https://github.com/dominionthedev/ministack)** — No description
-- **[notes](https://github.com/dominionthedev/notes)** — No description
 <!-- PERSONAL_REPOS:END -->
 
 ---
