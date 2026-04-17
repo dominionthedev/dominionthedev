@@ -67,10 +67,10 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[exp](https://github.com/dominionthedev/exp)** — My experimental projects and works
+- **[termbox](https://github.com/dominionthedev/termbox)** — Termbox is a toolbox for your terminal. enjoy
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[worktrunk](https://github.com/dominionthedev/worktrunk)** — Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
-- **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
-- **[Recordly](https://github.com/dominionthedev/Recordly)** — The open-source screen recorder and editor for professional product videos, demos, and tutorials.
 <!-- PERSONAL_REPOS:END -->
 
 ---
