@@ -67,10 +67,10 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[exp](https://github.com/dominionthedev/exp)** — My experimental projects and works
 - **[termbox](https://github.com/dominionthedev/termbox)** — Termbox is a toolbox for your terminal. enjoy
-- **[worktrunk](https://github.com/dominionthedev/worktrunk)** — Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
 <!-- PERSONAL_REPOS:END -->
 
 ---
@@ -78,11 +78,11 @@ A defining part of my work is a **theory-driven approach** to software design �
 ## 📓 Latest Notes
 
 <!-- NOTES:START -->
+- [`brand.md`](https://github.com/dominionthedev/notes/blob/main/brand.md) — Apr 21, 2026
+- [`lutip.md`](https://github.com/dominionthedev/notes/blob/main/lutip.md) — Apr 21, 2026
+- [`termbox.md`](https://github.com/dominionthedev/notes/blob/main/termbox.md) — Apr 21, 2026
 - [`theories/main.md`](https://github.com/dominionthedev/notes/blob/main/theories/main.md) — Apr 08, 2026
 - [`iFast_chat.md`](https://github.com/dominionthedev/notes/blob/main/iFast_chat.md) — Apr 07, 2026
-- [`cone.md`](https://github.com/dominionthedev/notes/blob/main/cone.md) — Apr 06, 2026
-- [`lutip.md`](https://github.com/dominionthedev/notes/blob/main/lutip.md) — Apr 06, 2026
-- [`mushmellow.md`](https://github.com/dominionthedev/notes/blob/main/mushmellow.md) — Apr 06, 2026
 
 → [Browse all notes](https://github.com/dominionthedev/notes)
 <!-- NOTES:END -->
