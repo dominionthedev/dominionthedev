@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>DominionDev — Brand System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg:        #090810;
+    --sur:       #120f20;
+    --bdr:       #1e1a30;
+    --bdr2:      #2a2245;
+    --bdr3:      #3a3260;
+    --text:      #d4ccf0;
+    --dim:       #8a8499;
+    --muted:     #5a5468;
+    --amber:     #c4963c;
+    --amber-lt:  #e8c06a;
+    --amber-dk:  #8a6420;
+    --amber-bg:  rgba(196,150,60,0.08);
+    --grey:      #8a8499;
+    --grey-lt:   #b0a8c0;
+    --violet:    #b87aff;
+    --font:      'JetBrains Mono', monospace;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--text); font-family: var(--font); min-height: 100vh; }
+
+  .wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px; display: flex; flex-direction: column; gap: 36px; }
+
+  /* Page title */
+  .page-title {
+    font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--amber); opacity: 0.8;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .page-title::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--amber), transparent); opacity: 0.3; }
+
+  /* Section labels */
+  .sec-label {
+    font-size: 9px; letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--muted);
+    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+  }
+  .sec-label::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--bdr2), transparent); }
+
+  /* Identity card */
+  .id-card {
+    background: var(--sur); border: 1px solid var(--bdr2);
+    border-radius: 12px; padding: 28px 24px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .monogram {
+    width: 56px; height: 56px; background: var(--amber-bg);
+    border: 1px solid var(--amber); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 700; color: var(--amber);
+    letter-spacing: -0.02em; flex-shrink: 0;
+  }
+  .id-top { display: flex; align-items: center; gap: 16px; }
+  .id-name { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+  .id-handle { font-size: 12px; font-weight: 400; color: var(--grey); margin-top: 4px; letter-spacing: 0.05em; }
+  .id-tagline {
+    font-size: 15px; font-weight: 400; color: var(--grey-lt);
+    padding: 14px 16px; border-left: 2px solid var(--amber);
+    background: var(--amber-bg); border-radius: 0 8px 8px 0;
+    font-style: italic; line-height: 1.5;
+  }
+  .id-values { display: flex; gap: 8px; flex-wrap: wrap; }
+  .val-chip {
+    font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+    padding: 5px 11px; border-radius: 4px; border: 1px solid var(--bdr2); color: var(--dim);
+  }
+  .val-chip.primary { border-color: var(--amber); color: var(--amber); }
+
+  /* Palette */
+  .palette-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .swatch { flex: 1; min-width: 130px; border-radius: 8px; overflow: hidden; border: 1px solid var(--bdr2); }
+  .swatch-colour { height: 52px; width: 100%; }
+  .swatch-info { padding: 10px 12px; background: var(--sur); }
+  .swatch-name { font-size: 11px; font-weight: 500; margin-bottom: 2px; }
+  .swatch-hex { font-size: 10px; color: var(--dim); letter-spacing: 0.08em; }
+  .swatch-role { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 4px; opacity: 0.7; }
+
+  /* Typography */
+  .type-showcase {
+    background: var(--sur); border: 1px solid var(--bdr2);
+    border-radius: 12px; padding: 20px 24px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .type-row {
+    display: flex; align-items: baseline; gap: 16px;
+    padding-bottom: 12px; border-bottom: 1px solid var(--bdr);
+  }
+  .type-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .type-meta { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); min-width: 80px; flex-shrink: 0; align-self: center; }
+  .t-display { font-size: 28px; font-weight: 700; letter-spacing: -0.025em; color: var(--amber); }
+  .t-heading { font-size: 16px; font-weight: 500; letter-spacing: -0.01em; }
+  .t-body { font-size: 13px; font-weight: 300; line-height: 1.7; color: var(--dim); }
+  .t-label { font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); }
+  .t-note { font-size: 10px; color: var(--muted); letter-spacing: 0.06em; margin-top: 3px; }
+
+  /* Symbol usage */
+  .symbol-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .symbol-card {
+    flex: 1; min-width: 150px; background: var(--sur);
+    border: 1px solid var(--bdr2); border-radius: 8px;
+    padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .sym { font-weight: 700; color: var(--amber); }
+  .sym-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); text-align: center; }
+  .sym-note { font-size: 10px; color: var(--dim); text-align: center; line-height: 1.5; }
+
+  /* Motion */
+  .motion-row { display: flex; flex-direction: column; gap: 8px; }
+  .motion-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 14px; background: var(--sur);
+    border: 1px solid var(--bdr2); border-radius: 8px;
+  }
+  .motion-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); flex-shrink: 0; }
+  .motion-name { font-size: 12px; font-weight: 500; min-width: 160px; }
+  .motion-desc { font-size: 11px; color: var(--dim); line-height: 1.5; }
+
+  /* Persona teaser */
+  .persona-teaser {
+    background: var(--amber-bg); border: 1px solid var(--amber);
+    border-radius: 12px; padding: 20px 24px;
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .persona-top { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+  .persona-icon {
+    width: 28px; height: 28px; border-radius: 4px;
+    background: rgba(196,150,60,0.15); border: 1px solid var(--amber);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 700; color: var(--amber);
+  }
+  .persona-title { font-size: 13px; font-weight: 500; color: var(--amber); }
+  .persona-sub { font-size: 11px; font-weight: 300; color: var(--dim); line-height: 1.6; }
+  .persona-sub em { font-style: italic; }
+  .persona-cmd {
+    font-size: 11px; font-family: var(--font);
+    background: var(--bg); border: 1px solid var(--bdr2);
+    border-radius: 4px; padding: 7px 12px;
+    color: var(--amber); letter-spacing: 0.06em;
+    display: inline-block; align-self: flex-start;
+  }
+
+  /* Footer */
+  .brand-footer {
+    border-top: 1px solid var(--bdr); padding-top: 20px;
+    font-size: 10px; color: var(--muted); letter-spacing: 0.12em;
+    display: flex; justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="page-title">DominionDev — Brand System</div>
+
+  <!-- IDENTITY -->
+  <div>
+    <div class="sec-label">Identity</div>
+    <div class="id-card">
+      <div class="id-top">
+        <div class="monogram">D/</div>
+        <div>
+          <div class="id-name">DominionDev</div>
+          <div class="id-handle">@dominionthedev</div>
+        </div>
+      </div>
+      <div class="id-tagline">"I build what I think."</div>
+      <div class="id-values">
+        <span class="val-chip primary">Warm</span>
+        <span class="val-chip primary">Precise</span>
+        <span class="val-chip primary">Relentless</span>
+        <span class="val-chip">Terminal native</span>
+        <span class="val-chip">FOSS</span>
+        <span class="val-chip">Architectural</span>
+        <span class="val-chip">Solo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLOUR PALETTE -->
+  <div>
+    <div class="sec-label">Colour palette</div>
+    <div class="palette-row">
+      <div class="swatch">
+        <div class="swatch-colour" style="background:#c4963c"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Dominion Amber</div>
+          <div class="swatch-hex">#c4963c</div>
+          <div class="swatch-role">Primary personal</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-colour" style="background:#8a8499"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Grey Pure</div>
+          <div class="swatch-hex">#8a8499</div>
+          <div class="swatch-role">Secondary / structure</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-colour" style="background:#b87aff"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Leraniode Violet</div>
+          <div class="swatch-hex">#b87aff</div>
+          <div class="swatch-role">Accent / org link</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-colour" style="background:#0d0b14; border-top: 1px solid #2a2245;"></div>
+        <div class="swatch-info">
+          <div class="swatch-name">Dominion Dark</div>
+          <div class="swatch-hex">#0d0b14</div>
+          <div class="swatch-role">Background</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TYPOGRAPHY -->
+  <div>
+    <div class="sec-label">Typography</div>
+    <div class="type-showcase">
+      <div class="type-row">
+        <div class="type-meta">Display</div>
+        <div>
+          <div class="t-display">DominionDev/</div>
+          <div class="t-note">JetBrains Mono 700 · −0.025em</div>
+        </div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Heading</div>
+        <div>
+          <div class="t-heading">I build what I think.</div>
+          <div class="t-note">JetBrains Mono 500 · −0.01em</div>
+        </div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Body</div>
+        <div>
+          <div class="t-body">Building tools that feel alive — CLI tools, TUIs, and open-source systems in Go, Python, and Rust.</div>
+          <div class="t-note">JetBrains Mono 300 · 1.7 leading</div>
+        </div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Label</div>
+        <div>
+          <div class="t-label">Solo Dev · FOSS · Terminal Native</div>
+          <div class="t-note">JetBrains Mono 500 · 0.22em tracked</div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:10px;color:var(--muted);margin-top:10px;line-height:1.7">
+      One font. JetBrains Mono is where you live — terminal, code, everything.
+      Using only monospace is a statement: <em style="font-style:italic;color:var(--dim)">I don't pretend to be corporate. This is what I am.</em>
+    </p>
+  </div>
+
+  <!-- SYMBOL USAGE -->
+  <div>
+    <div class="sec-label">Symbol usage</div>
+    <div class="symbol-row">
+      <div class="symbol-card">
+        <div class="sym" style="font-size:32px">D/</div>
+        <div class="sym-label">Primary mark</div>
+        <div class="sym-note">Your monogram. The D + the Leraniode slash. Owns your org connection without being the org.</div>
+      </div>
+      <div class="symbol-card">
+        <div class="sym" style="font-size:19px">DominionDev/</div>
+        <div class="sym-label">Full wordmark</div>
+        <div class="sym-note">Always with trailing slash when used as a brand mark. Slash = forward motion.</div>
+      </div>
+      <div class="symbol-card">
+        <div class="sym" style="font-size:13px;letter-spacing:0.06em">@dominionthedev</div>
+        <div class="sym-label">Handle</div>
+        <div class="sym-note">Used below the name. Never replaces the name. Always lowercase, always the full handle.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOTION LANGUAGE -->
+  <div>
+    <div class="sec-label">Motion language</div>
+    <div class="motion-row">
+      <div class="motion-item">
+        <div class="motion-dot"></div>
+        <div class="motion-name">Amber glow breath</div>
+        <div class="motion-desc">Interactive elements pulse softly with amber glow on hover. Slow — 0.3s ease-out. Nothing snaps.</div>
+      </div>
+      <div class="motion-item">
+        <div class="motion-dot"></div>
+        <div class="motion-name">Deliberate entrance</div>
+        <div class="motion-desc">Elements rise 12px and fade in over 0.5s. No bounce, no spring. Calm and intentional.</div>
+      </div>
+      <div class="motion-item">
+        <div class="motion-dot"></div>
+        <div class="motion-name">Stroke draw</div>
+        <div class="motion-desc">SVG elements draw themselves on load — tree growing, signature writing. Organic, not mechanical.</div>
+      </div>
+      <div class="motion-item">
+        <div class="motion-dot"></div>
+        <div class="motion-name">No glitch, no flash</div>
+        <div class="motion-desc">Glitch effects belong to Leraniode/Action. Personal brand stays warm and precise. Not a machine — a person.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERSONA TEASER -->
+  <div class="persona-teaser">
+    <div class="persona-top">
+      <div class="persona-icon">P/</div>
+      <div class="persona-title">Persona — a product idea born from this</div>
+    </div>
+    <div class="persona-sub">
+      A CLI/TUI tool that profiles and brands <em>you</em>. Interview → palette → tagline → card →
+      <code style="font-family:var(--font);font-size:10px;color:var(--amber)">.persona</code> file.
+      Not a portfolio generator — a genuine identity system for developers. The tool that Brandy is
+      for Leraniode, but for the person behind the org.
+    </div>
+    <div class="persona-cmd">persona init</div>
+  </div>
+
+  <div class="brand-footer">
+    <span>DominionDev Brand System · v0.1</span>
+    <span>Warm · Precise · Relentless</span>
+  </div>
+
+</div>
+</body>
+</html>
