@@ -67,8 +67,8 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
 - **[exp](https://github.com/dominionthedev/exp)** — My experimental projects and works
 - **[termbox](https://github.com/dominionthedev/termbox)** — Termbox is a toolbox for your terminal. enjoy
 <!-- PERSONAL_REPOS:END -->
