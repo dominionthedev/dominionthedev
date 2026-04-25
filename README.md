@@ -52,9 +52,9 @@ A defining part of my work is a **theory-driven approach** to software design �
 > Building tools that feel alive.
 
 <!-- ORG_REPOS:START -->
-- **[xgo](https://github.com/leraniode/xgo)** — Leraniode/'s Experimental go modules
 - **[.github](https://github.com/leraniode/.github)** — Leraniode/ github repo housing artifacts used across projects 🌱
 - **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨🌈
+- **[xgo](https://github.com/leraniode/xgo)** — Leraniode/'s Experimental go modules
 - **[illygen](https://github.com/leraniode/illygen)** — a Go-based library and runtime for building intelligence systems 🧠
 - **[alolyte](https://github.com/leraniode/alolyte)** — Programmable SVG design library for Go 😎✨.
 - **[xpy](https://github.com/leraniode/xpy)** — Leraniode's Experimental python packages
@@ -67,8 +67,8 @@ A defining part of my work is a **theory-driven approach** to software design �
 ### Personal Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[Recordly](https://github.com/dominionthedev/Recordly)** — The open-source screen recorder and editor for professional product videos, demos, and tutorials.
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[Recordly](https://github.com/dominionthedev/Recordly)** — The open-source screen recorder and editor for professional product videos, demos, and tutorials.
 - **[exp](https://github.com/dominionthedev/exp)** — My experimental projects and works
 - **[notes](https://github.com/dominionthedev/notes)** — My notes, researches, theories and project blueprints/ideas
 <!-- PERSONAL_REPOS:END -->
@@ -92,7 +92,7 @@ A defining part of my work is a **theory-driven approach** to software design �
 ## 💡 Recent Gists
 
 <!-- GISTS:START -->
-_No gists yet._
+- [No description](https://gist.github.com/dominionthedev/e30e5420a02265d28bfcf93b9599ac4d) — `Apr 2026`
 <!-- GISTS:END -->
 
 ---
