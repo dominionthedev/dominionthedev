@@ -33,13 +33,6 @@
 
 ---
 
-## 📓 Latest Notes
-
-<!-- NOTES:START -->
-<!-- NOTES:END -->
-
----
-
 ## 💡 Recent Gists
 
 <!-- GISTS:START -->

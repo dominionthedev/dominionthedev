@@ -34,35 +34,27 @@ jobs:
       - name: copy README.md.tpl
         run: cp README.md.tpl README.tmp
 
-      # ── Notes ─────────────────────────
-      - name: Inject notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
-          NOTES_REPO:   dominionthedev/notes
-          README_PATH:  README.tmp
-        run: python scripts/inject_notes.py
-
       # ── Gists ─────────────────────────
       - name: Inject gists
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
-          USERNAME:     dominionthedev
-          README_PATH:  README.tmp
+          USERNAME: dominionthedev
+          README_PATH: README.tmp
         run: python scripts/inject_gist.py
 
       # ── Repos ─────────────────────────
       - name: Inject repos
         env:
           GITHUB_TOKEN: ${{ secrets.README_TOKEN }}
-          USERNAME:     dominionthedev
-          ORG_NAME:     leraniode
-          README_PATH:  README.tmp
+          USERNAME: dominionthedev
+          ORG_NAME: leraniode
+          README_PATH: README.tmp
         run: python scripts/inject_repos.py
 
       # ── Render ────────────────────────
       - name: Render README
         env:
-          TPL_PATH:    README.tmp
+          TPL_PATH: README.tmp
           README_PATH: README.md
         run: python scripts/render_readme.py
 
