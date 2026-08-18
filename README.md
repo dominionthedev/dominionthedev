@@ -41,20 +41,6 @@
 
 ---
 
-## 📓 Latest Notes
-
-<!-- NOTES:START -->
-- [`clorax.md`](https://github.com/dominionthedev/notes/blob/main/clorax.md) — Jun 19, 2026
-- [`codenote.md`](https://github.com/dominionthedev/notes/blob/main/codenote.md) — Jun 19, 2026
-- [`compkit.md`](https://github.com/dominionthedev/notes/blob/main/compkit.md) — Jun 19, 2026
-- [`cone.md`](https://github.com/dominionthedev/notes/blob/main/cone.md) — Jun 19, 2026
-- [`lysip.md`](https://github.com/dominionthedev/notes/blob/main/lysip.md) — Jun 19, 2026
-
-→ [Browse all notes](https://github.com/dominionthedev/notes)
-<!-- NOTES:END -->
-
----
-
 ## 💡 Recent Gists
 
 <!-- GISTS:START -->
