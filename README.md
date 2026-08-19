@@ -22,15 +22,16 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
-- **[aether](https://github.com/dominionthedev/aether)** — A terminal from the void
-- **[dominionthedev.github.io](https://github.com/dominionthedev/dominionthedev.github.io)** — My website, of course
-- **[ollacloud](https://github.com/dominionthedev/ollacloud)** — Use Ollama Cloud without downloading Ollama.
+- **[panewatch](https://github.com/dominionthedev/panewatch)** — Notifies you when a command in a tmux pane you're not currently looking at — any session, any window — finishes, fails, or looks like it's stalled waiting on you. Built on `terminal-notifier`, clickable to jump straight to the pane.
+- **[sheme](https://github.com/dominionthedev/sheme)** — A go library that creates themes for shells using wondertone
+- **[sensible](https://github.com/dominionthedev/sensible)** — reusable go helpers
+- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
 
 <!-- ORG_REPOS:START -->
+- **[glitter](https://github.com/leraniode/glitter)** — Leraniode official repo for tones and palettes
 - **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[.github](https://github.com/leraniode/.github)** — Leraniode's meta repo
 - **[illygen](https://github.com/leraniode/illygen)** — Deterministic intelligence framework for Go.
