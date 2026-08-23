@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
+- **[sensible](https://github.com/dominionthedev/sensible)** — reusable go helpers
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 - **[tplate](https://github.com/dominionthedev/tplate)** — tmux session template manager
-- **[panewatch](https://github.com/dominionthedev/panewatch)** — Notifies you when a command in a tmux pane you're not currently looking at — any session, any window — finishes, fails, or looks like it's stalled waiting on you. Built on `terminal-notifier`, clickable to jump straight to the pane.
-- **[sheme](https://github.com/dominionthedev/sheme)** — A go library that creates themes for shells using wondertone
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
