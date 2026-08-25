@@ -22,8 +22,8 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 - **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
+- **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 - **[sensible](https://github.com/dominionthedev/sensible)** — reusable go helpers
 <!-- PERSONAL_REPOS:END -->
