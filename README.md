@@ -23,8 +23,8 @@
 
 <!-- PERSONAL_REPOS:START -->
 - **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
-- **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
+- **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 - **[sensible](https://github.com/dominionthedev/sensible)** — reusable go helpers
 <!-- PERSONAL_REPOS:END -->
 
