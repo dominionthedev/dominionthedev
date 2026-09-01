@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[termfx](https://github.com/dominionthedev/termfx)** — UI-grade motion & treatment for terminal UIs.
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 - **[genflow](https://github.com/dominionthedev/genflow)** — a lightweight Go library for building flow-based reasoning and decision systems.
 - **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
-- **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
