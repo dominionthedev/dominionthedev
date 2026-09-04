@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 - **[odd](https://github.com/dominionthedev/odd)** — a userspace tool that adds objects, relationships, history, and composition on top of an ordinary Unix filesystem
 - **[termfx](https://github.com/dominionthedev/termfx)** — UI-grade motion & treatment for terminal UIs.
 - **[leak](https://github.com/dominionthedev/leak)** — a Go library for interacting with and controlling the terminal
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
