@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
 - **[termfx](https://github.com/dominionthedev/termfx)** — UI-grade motion & treatment for terminal UIs.
 - **[mushmellow](https://github.com/dominionthedev/mushmellow)** — A deterministic, local-first orchestration runtime for development workflows
 - **[leak](https://github.com/dominionthedev/leak)** — a Go library for interacting with and controlling the terminal
-- **[drop](https://github.com/dominionthedev/drop)** — a terminal screen toolkit for Go that provides abstractions for constructing, composing, manipulating, and rendering a virtual screen onto a terminal.
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
