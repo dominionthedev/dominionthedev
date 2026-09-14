@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[mushmellow](https://github.com/dominionthedev/mushmellow)** — A deterministic, local-first orchestration runtime for development workflows
-- **[drop](https://github.com/dominionthedev/drop)** — a terminal screen toolkit for Go that provides abstractions for constructing, composing, manipulating, and rendering a virtual screen onto a terminal.
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — My profile
-- **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
+- **[profile](https://github.com/dominionthedev/profile)** — my github profile
+- **[termfx](https://github.com/dominionthedev/termfx)** — UI-grade motion & treatment for terminal UIs.
+- **[leak](https://github.com/dominionthedev/leak)** — a Go library for interacting with and controlling the terminal
+- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
