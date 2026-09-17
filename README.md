@@ -23,15 +23,16 @@
 
 <!-- PERSONAL_REPOS:START -->
 - **[nvim-timeline](https://github.com/dominionthedev/nvim-timeline)** — Git-like history for individual files in Neovim
-- **[neobar](https://github.com/dominionthedev/neobar)** — A little VSCode-like activity bar for neovim
-- **[runbox](https://github.com/dominionthedev/runbox)** — MacOS-only dev-box isolation. Not a container, not a VM.
-- **[drop](https://github.com/dominionthedev/drop)** — a terminal screen toolkit for Go that provides abstractions for constructing, composing, manipulating, and rendering a virtual screen onto a terminal.
+- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
+- **[crontask](https://github.com/dominionthedev/crontask)** — Laptop automations via crontab(Linux) and launchd(macOS).
+- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
 
 <!-- ORG_REPOS:START -->
 - **[glitter](https://github.com/leraniode/glitter)** — Leraniode official repo for tones and palettes
+- **[vault](https://github.com/leraniode/vault)** — leraniode repo for project documents, blueprints, researches, plans, etc.
 - **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[.github](https://github.com/leraniode/.github)** — Leraniode's meta repo
 - **[illygen](https://github.com/leraniode/illygen)** — Deterministic intelligence framework for Go.
