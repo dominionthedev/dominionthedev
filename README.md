@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[nvim-timeline](https://github.com/dominionthedev/nvim-timeline)** — Git-like history for individual files in Neovim
-- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
-- **[crontask](https://github.com/dominionthedev/crontask)** — Laptop automations via crontab(Linux) and launchd(macOS).
-- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
+- **[Mole](https://github.com/dominionthedev/Mole)** — 🐹 Clean, uninstall, analyze, optimize, and monitor your Mac. Free open-source CLI, plus a native Mac app.
+- **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
+- **[git.yazi](https://github.com/dominionthedev/git.yazi)** — A [Yazi](https://github.com/sxyazi/yazi) plugin to show Git file status as linemode.
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
