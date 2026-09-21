@@ -22,9 +22,9 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
 - **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
-- **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
 - **[git.yazi](https://github.com/dominionthedev/git.yazi)** — A [Yazi](https://github.com/sxyazi/yazi) plugin to show Git file status as linemode.
 <!-- PERSONAL_REPOS:END -->
 
