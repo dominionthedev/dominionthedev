@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
-- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
+- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
+- **[nvim-timeline](https://github.com/dominionthedev/nvim-timeline)** — Git-like history for individual files in Neovim
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
-- **[git.yazi](https://github.com/dominionthedev/git.yazi)** — A [Yazi](https://github.com/sxyazi/yazi) plugin to show Git file status as linemode.
+- **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
