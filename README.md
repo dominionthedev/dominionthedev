@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
-- **[nvim-timeline](https://github.com/dominionthedev/nvim-timeline)** — Git-like history for individual files in Neovim
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[site](https://github.com/dominionthedev/site)** — A tour, not a resume.
 - **[odd](https://github.com/dominionthedev/odd)** — A weird way to deal with the filesystem.
+- **[timeline.nvim](https://github.com/dominionthedev/timeline.nvim)** — Git-like history for individual files in Neovim
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
