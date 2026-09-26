@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 - **[site](https://github.com/dominionthedev/site)** — A tour, not a resume.
 - **[timeline.nvim](https://github.com/dominionthedev/timeline.nvim)** — Git-like history for individual files in Neovim
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
