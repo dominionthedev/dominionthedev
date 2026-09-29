@@ -22,17 +22,17 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
-- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
-- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 - **[site](https://github.com/dominionthedev/site)** — A tour, not a resume.
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
+- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
+- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
 
 <!-- ORG_REPOS:START -->
-- **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[.github](https://github.com/leraniode/.github)** — Leraniode's meta repo
+- **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[glitter](https://github.com/leraniode/glitter)** — Leraniode official repo for tones and palettes
 - **[vault](https://github.com/leraniode/vault)** — leraniode repo for project documents, blueprints, researches, plans, etc.
 - **[illygen](https://github.com/leraniode/illygen)** — Deterministic intelligence framework for Go.
