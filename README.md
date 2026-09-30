@@ -31,10 +31,10 @@
 ### Leraniode/ — My Organisation
 
 <!-- ORG_REPOS:START -->
-- **[.github](https://github.com/leraniode/.github)** — Leraniode's meta repo
-- **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[glitter](https://github.com/leraniode/glitter)** — Leraniode official repo for tones and palettes
+- **[.github](https://github.com/leraniode/.github)** — Leraniode's meta repo
 - **[vault](https://github.com/leraniode/vault)** — leraniode repo for project documents, blueprints, researches, plans, etc.
+- **[wondertone](https://github.com/leraniode/wondertone)** — A perceptual color intelligence library for Go 🎨
 - **[illygen](https://github.com/leraniode/illygen)** — Deterministic intelligence framework for Go.
 - **[x](https://github.com/leraniode/x)** — Leraniode's monorepo for experimental packages
 <!-- ORG_REPOS:END -->
