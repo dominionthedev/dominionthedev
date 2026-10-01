@@ -22,9 +22,9 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
 - **[site](https://github.com/dominionthedev/site)** — A tour, not a resume.
 - **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
-- **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
 - **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 <!-- PERSONAL_REPOS:END -->
 
