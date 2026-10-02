@@ -22,10 +22,10 @@
 ## 🚀 Projects
 
 <!-- PERSONAL_REPOS:START -->
+- **[lean](https://github.com/dominionthedev/lean)** — A smart tool for managing your env files ⚡️
+- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
 - **[finite](https://github.com/dominionthedev/finite)** — Programmable SVG design library for Go 😎✨.
 - **[site](https://github.com/dominionthedev/site)** — A tour, not a resume.
-- **[dominionthedev](https://github.com/dominionthedev/dominionthedev)** — my github profile
-- **[dotfiles](https://github.com/dominionthedev/dotfiles)** — my config files
 <!-- PERSONAL_REPOS:END -->
 
 ### Leraniode/ — My Organisation
